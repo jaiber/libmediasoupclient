@@ -14,8 +14,9 @@ namespace sdptransform
 {
 	namespace grammar
 	{
-		struct Rule
+		class Rule
 		{
+		    public:
 			std::string name;
 			std::string push;
 			std::regex reg;
