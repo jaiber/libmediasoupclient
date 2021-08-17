@@ -1,5 +1,6 @@
 #include "sdptransform.hpp"
 
+#define DEFAULT_FORMAT_FUNC [](const json& o) { return "";}
 namespace sdptransform
 {
 	namespace grammar
@@ -26,7 +27,7 @@ namespace sdptransform
 						// format:
 						"%d",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -49,7 +50,7 @@ namespace sdptransform
 						// format:
 						"%s %d %d %s IP%d %s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -72,7 +73,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -95,7 +96,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -118,7 +119,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -141,7 +142,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -164,7 +165,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -186,7 +187,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -208,7 +209,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -231,7 +232,7 @@ namespace sdptransform
 						// format:
 						"%d %d",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -282,7 +283,7 @@ namespace sdptransform
 						// format:
 						"%s:%d",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					}
 				}
 			},
@@ -359,7 +360,7 @@ namespace sdptransform
 						// format:
 						"fmtp:%d %s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=control:streamid=0
@@ -377,7 +378,7 @@ namespace sdptransform
 						// format:
 						"control:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=rtcp:65179 IN IP4 193.84.77.194
@@ -418,7 +419,7 @@ namespace sdptransform
 						// format:
 						"rtcp-fb:%s trr-int %d",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=rtcp-fb:98 nack rpsi
@@ -486,7 +487,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:PS1uQCVeeCFCanVmcjkpPywjNWhcYD0mXXtxaVBR|2^20|1:32
@@ -527,7 +528,7 @@ namespace sdptransform
 						// format:
 						"setup:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=mid:1
@@ -545,7 +546,7 @@ namespace sdptransform
 						// format:
 						"mid:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=msid:0c8b064d-d807-43b4-b434-f92a889d8587 98178685-d409-46e0-8e16-7ef0db0db64a
@@ -563,7 +564,7 @@ namespace sdptransform
 						// format:
 						"msid:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=ptime:20
@@ -581,7 +582,7 @@ namespace sdptransform
 						// format:
 						"ptime:%d",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=maxptime:60
@@ -599,7 +600,7 @@ namespace sdptransform
 						// format:
 						"maxptime:%d",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=sendrecv
@@ -617,7 +618,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=ice-lite
@@ -635,7 +636,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=ice-ufrag:F7gI
@@ -653,7 +654,7 @@ namespace sdptransform
 						// format:
 						"ice-ufrag:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=ice-pwd:x9cml/YzichV2+XlhiMu8g
@@ -671,7 +672,7 @@ namespace sdptransform
 						// format:
 						"ice-pwd:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=fingerprint:SHA-1 00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33
@@ -689,7 +690,7 @@ namespace sdptransform
 						// format:
 						"fingerprint:%s %s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=candidate:0 1 UDP 2113667327 203.0.113.1 54400 typ host
@@ -746,7 +747,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=remote-candidates:1 203.0.113.1 54400 2 203.0.113.1 54401
@@ -764,7 +765,7 @@ namespace sdptransform
 						// format:
 						"remote-candidates:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=ice-options:google-ice
@@ -782,7 +783,7 @@ namespace sdptransform
 						// format:
 						"ice-options:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=ssrc:2566107569 cname:t9YU8M1UxTF8Y1A1
@@ -832,7 +833,7 @@ namespace sdptransform
 						// format:
 						"ssrc-group:%s %s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=msid-semantic: WMS Jvlam5X3SX1OP6pn20zWogvaKJz5Hjf9OnlV
@@ -850,7 +851,7 @@ namespace sdptransform
 						// format:
 						"msid-semantic: %s %s", // Space after ':' is not accidental.
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=group:BUNDLE audio video
@@ -868,7 +869,7 @@ namespace sdptransform
 						// format:
 						"group:%s %s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=rtcp-mux
@@ -886,7 +887,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=rtcp-rsize
@@ -904,7 +905,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=sctpmap:5000 webrtc-datachannel 1024
@@ -945,7 +946,7 @@ namespace sdptransform
 						// format:
 						"x-google-flag:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=rid:1 send max-width=1280;max-height=720;max-fps=30;depend=0
@@ -1056,7 +1057,7 @@ namespace sdptransform
 						// format:
 						"simulcast: %s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=framerate:25
@@ -1075,7 +1076,7 @@ namespace sdptransform
 						// format:
 						"framerate:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=source-filter: incl IN IP4 239.5.2.31 10.1.15.5
@@ -1093,7 +1094,7 @@ namespace sdptransform
 						// format:
 						"source-filter: %s %s %s %s %s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=ts-refclk:ptp=IEEE1588-2008:00-50-C2-FF-FE-90-04-37:0
@@ -1111,7 +1112,7 @@ namespace sdptransform
 						// format:
 						"ts-refclk:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// a=mediaclk:direct=0
@@ -1129,7 +1130,7 @@ namespace sdptransform
 						// format:
 						"mediaclk:%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 
 					// Any a= that we don't understand is kepts verbatim on media.invalid.
@@ -1147,7 +1148,7 @@ namespace sdptransform
 						// format:
 						"%s",
 						// formatFunc
-						nullptr
+						DEFAULT_FORMAT_FUNC
 					},
 				}
 			}
