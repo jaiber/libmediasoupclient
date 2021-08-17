@@ -24,7 +24,9 @@ namespace sdptransform
 						// types:
 						{ 'd' },
 						// format:
-						"%d"
+						"%d",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -45,7 +47,9 @@ namespace sdptransform
 						// types:
 						{ 's', 'u', 'u', 's', 'd', 's' },
 						// format:
-						"%s %d %d %s IP%d %s"
+						"%s %d %d %s IP%d %s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -66,7 +70,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -87,7 +93,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -108,7 +116,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -129,7 +139,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -150,7 +162,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -170,7 +184,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -190,7 +206,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -211,7 +229,9 @@ namespace sdptransform
 						// types:
 						{ 'd', 'd' },
 						// format:
-						"%d %d"
+						"%d %d",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -260,7 +280,9 @@ namespace sdptransform
 						// types:
 						{ 's', 'd' },
 						// format:
-						"%s:%d"
+						"%s:%d",
+						// formatFunc
+						nullptr
 					}
 				}
 			},
@@ -335,7 +357,9 @@ namespace sdptransform
 						// types:
 						{ 'd', 's' },
 						// format:
-						"fmtp:%d %s"
+						"fmtp:%d %s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=control:streamid=0
@@ -351,7 +375,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"control:%s"
+						"control:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=rtcp:65179 IN IP4 193.84.77.194
@@ -390,7 +416,9 @@ namespace sdptransform
 						// types:
 						{ 's', 'd' },
 						// format:
-						"rtcp-fb:%s trr-int %d"
+						"rtcp-fb:%s trr-int %d",
+						// formatFunc
+						nullptr
 					},
 
 					// a=rtcp-fb:98 nack rpsi
@@ -456,7 +484,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:PS1uQCVeeCFCanVmcjkpPywjNWhcYD0mXXtxaVBR|2^20|1:32
@@ -495,7 +525,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"setup:%s"
+						"setup:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=mid:1
@@ -511,7 +543,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"mid:%s"
+						"mid:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=msid:0c8b064d-d807-43b4-b434-f92a889d8587 98178685-d409-46e0-8e16-7ef0db0db64a
@@ -527,7 +561,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"msid:%s"
+						"msid:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=ptime:20
@@ -543,7 +579,9 @@ namespace sdptransform
 						// types:
 						{ 'd' },
 						// format:
-						"ptime:%d"
+						"ptime:%d",
+						// formatFunc
+						nullptr
 					},
 
 					// a=maxptime:60
@@ -559,7 +597,9 @@ namespace sdptransform
 						// types:
 						{ 'd' },
 						// format:
-						"maxptime:%d"
+						"maxptime:%d",
+						// formatFunc
+						nullptr
 					},
 
 					// a=sendrecv
@@ -575,7 +615,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=ice-lite
@@ -591,7 +633,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=ice-ufrag:F7gI
@@ -607,7 +651,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"ice-ufrag:%s"
+						"ice-ufrag:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=ice-pwd:x9cml/YzichV2+XlhiMu8g
@@ -623,7 +669,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"ice-pwd:%s"
+						"ice-pwd:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=fingerprint:SHA-1 00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33
@@ -639,7 +687,9 @@ namespace sdptransform
 						// types:
 						{ 's', 's' },
 						// format:
-						"fingerprint:%s %s"
+						"fingerprint:%s %s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=candidate:0 1 UDP 2113667327 203.0.113.1 54400 typ host
@@ -694,7 +744,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=remote-candidates:1 203.0.113.1 54400 2 203.0.113.1 54401
@@ -710,7 +762,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"remote-candidates:%s"
+						"remote-candidates:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=ice-options:google-ice
@@ -726,7 +780,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"ice-options:%s"
+						"ice-options:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=ssrc:2566107569 cname:t9YU8M1UxTF8Y1A1
@@ -774,7 +830,9 @@ namespace sdptransform
 						// types:
 						{ 's', 's' },
 						// format:
-						"ssrc-group:%s %s"
+						"ssrc-group:%s %s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=msid-semantic: WMS Jvlam5X3SX1OP6pn20zWogvaKJz5Hjf9OnlV
@@ -790,7 +848,9 @@ namespace sdptransform
 						// types:
 						{ 's', 's' },
 						// format:
-						"msid-semantic: %s %s" // Space after ':' is not accidental.
+						"msid-semantic: %s %s", // Space after ':' is not accidental.
+						// formatFunc
+						nullptr
 					},
 
 					// a=group:BUNDLE audio video
@@ -806,7 +866,9 @@ namespace sdptransform
 						// types:
 						{ 's', 's' },
 						// format:
-						"group:%s %s"
+						"group:%s %s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=rtcp-mux
@@ -822,7 +884,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=rtcp-rsize
@@ -838,7 +902,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=sctpmap:5000 webrtc-datachannel 1024
@@ -877,7 +943,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"x-google-flag:%s"
+						"x-google-flag:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=rid:1 send max-width=1280;max-height=720;max-fps=30;depend=0
@@ -986,7 +1054,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"simulcast: %s"
+						"simulcast: %s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=framerate:25
@@ -1003,7 +1073,9 @@ namespace sdptransform
 						// types:
 						{ 'f' },
 						// format:
-						"framerate:%s"
+						"framerate:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=source-filter: incl IN IP4 239.5.2.31 10.1.15.5
@@ -1019,7 +1091,9 @@ namespace sdptransform
 						// types:
 						{ 's', 's', 's', 's', 's' },
 						// format:
-						"source-filter: %s %s %s %s %s"
+						"source-filter: %s %s %s %s %s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=ts-refclk:ptp=IEEE1588-2008:00-50-C2-FF-FE-90-04-37:0
@@ -1035,7 +1109,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"ts-refclk:%s"
+						"ts-refclk:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// a=mediaclk:direct=0
@@ -1051,7 +1127,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"mediaclk:%s"
+						"mediaclk:%s",
+						// formatFunc
+						nullptr
 					},
 
 					// Any a= that we don't understand is kepts verbatim on media.invalid.
@@ -1067,7 +1145,9 @@ namespace sdptransform
 						// types:
 						{ 's' },
 						// format:
-						"%s"
+						"%s",
+						// formatFunc
+						nullptr
 					},
 				}
 			}

@@ -25,7 +25,6 @@ namespace sdptransform
 			std::vector<char> types;
 			std::string format;
 			std::function<const std::string(const json&)> formatFunc;
-			~Rule() {}
 		};
 
 		extern const std::map<char, std::vector<Rule>> rulesMap;
