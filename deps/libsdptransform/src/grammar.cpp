@@ -31,7 +31,7 @@ namespace sdptransform
 					}
 				}
 			},
-
+#if 0
 			{
 				'o',
 				{
@@ -1152,6 +1152,7 @@ namespace sdptransform
 					},
 				}
 			}
+#endif
 		};
 
 		bool hasValue(const json& o, const std::string& key)
